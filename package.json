@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-mongodb-projetores",
+  "version": "1.0.0",
+  "description": "A NodeJS application to manage projector's reservations.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "projector"
+  ],
+  "author": "@Jphn",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "mongoose": "^6.0.8"
+  }
+}

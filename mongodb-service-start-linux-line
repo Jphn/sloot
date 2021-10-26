@@ -1,0 +1,6 @@
+mongod --dbpath /usr/local/var/mongodb
+
+// OR //
+
+$ sudo rm -rf /tmp/mongodb-27017.sock
+$ sudo service mongod start

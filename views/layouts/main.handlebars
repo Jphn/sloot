@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en-US" class="has-navbar-fixed-top has-background-link-light">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="João Pedro Holanda Neves">
+
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="/resources/images/logo/rabbit/carrot.png" type="image/x-icon">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Icons -->
+    <script src="https://kit.fontawesome.com/02f8bc755d.js" crossorigin="anonymous"></script>
+
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    <title>
+        {{#with pageValues}}
+        {{#if pageTitle}}
+        {{pageTitle}}
+        {{else}}
+        Sloot
+        {{/if}}
+        {{/with}}
+    </title>
+</head>
+
+<body class="example">
+
+    {{>_navbar}}
+
+    <div class="container is-fluid mt-2">
+        {{#with pageValues}}
+        <h1 class="title">{{title}}</h1>
+        <h2 class="subtitle">{{subtitle}}</h2>
+        {{/with}}
+        {{{body}}}
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

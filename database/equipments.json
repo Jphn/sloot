@@ -1,0 +1,205 @@
+[{
+  "_id": {
+    "$oid": "615c99430741f0f716838f4f"
+  },
+  "type": "Cabo",
+  "subtype": "Som",
+  "name": "P2 M / 2 RCA M",
+  "quantity": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f4e"
+  },
+  "type": "Cabo",
+  "subtype": "Som",
+  "name": "P10 M / P10 M",
+  "quantity": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f50"
+  },
+  "type": "Cabo",
+  "subtype": "Som",
+  "name": "P10 M / XLR F",
+  "quantity": 1,
+  "comments": "Ruim",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f51"
+  },
+  "type": "Caixa de som",
+  "name": "Watsom",
+  "quantity": 1,
+  "comments": "Grande, velha e ruim",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f52"
+  },
+  "type": "Microfone",
+  "subtype": "Com fio",
+  "name": "XLR M",
+  "quantity": 1,
+  "comments": "Velho, porém, funcional",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f53"
+  },
+  "type": "Cabo",
+  "subtype": "Som",
+  "name": "P2 M / P10 Insert M",
+  "quantity": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f54"
+  },
+  "type": "Cabo",
+  "subtype": "Som",
+  "name": "P10 M / XLR M",
+  "quantity": 2,
+  "comments": "Longo e azul",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f55"
+  },
+  "type": "Cabo",
+  "subtype": "Som",
+  "name": "P2 M / P2 M",
+  "quantity": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f56"
+  },
+  "type": "Cabo",
+  "subtype": "Som",
+  "name": "P3 M / 3 RCA M",
+  "quantity": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f57"
+  },
+  "type": "Cabo",
+  "subtype": "Vídeo",
+  "name": "VGA Azul M",
+  "quantity": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f58"
+  },
+  "type": "Cabo",
+  "subtype": "Vídeo",
+  "name": "VGA Preto M",
+  "quantity": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f59"
+  },
+  "type": "Cabo",
+  "subtype": "Alimentação",
+  "name": "Tripolar Trapézio N",
+  "quantity": 4,
+  "comments": "Uma sem um pino",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f5a"
+  },
+  "type": "Cabo",
+  "subtype": "Alimentação",
+  "name": "Tripolar Circular N",
+  "quantity": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f5b"
+  },
+  "type": "Microfone",
+  "subtype": "Sem fio",
+  "name": "Lyco RE-UH06",
+  "quantity": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f5c"
+  },
+  "type": "Cabo",
+  "subtype": "Alimentação",
+  "name": "Tripolar Trapézio B",
+  "quantity": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f5d"
+  },
+  "type": "Cabo",
+  "subtype": "Telefônico",
+  "name": "Rj11",
+  "quantity": 4,
+  "comments": "1 longo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f5e"
+  },
+  "type": "Cabo",
+  "name": "USB A/B",
+  "quantity": 2,
+  "comments": "1 velho, outro com defeito",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f5f"
+  },
+  "type": "Teclado",
+  "subtype": "Membrana",
+  "name": "Goldentec GT850",
+  "quantity": 2,
+  "comments": "Novos, recém comprados",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f60"
+  },
+  "type": "Teclado",
+  "subtype": "Membrana",
+  "name": "Multilaser tc193bu",
+  "quantity": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f61"
+  },
+  "type": "Microfone",
+  "subtype": "Lapela",
+  "name": "Boya BY-M1",
+  "quantity": 10,
+  "comments": "1 meio ruim",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f62"
+  },
+  "type": "Adaptador",
+  "name": "P3 M / 2x P2 F",
+  "quantity": 10,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "615c99430741f0f716838f63"
+  },
+  "type": "Caixa de som",
+  "subtype": "JBL",
+  "name": "JS151A",
+  "quantity": 1,
+  "__v": 0
+}]

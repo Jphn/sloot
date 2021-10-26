@@ -1,0 +1,13 @@
+:root::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+:root {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none !important  /* Firefox */
+}
+
+.clickableRow {
+  cursor: pointer;
+} 
