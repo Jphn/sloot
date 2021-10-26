@@ -18,15 +18,7 @@ exports.home = (req, res) => {
 // Controller: About
 exports.about = (req, res) => {
     res.setHeader('Content-Type', 'text/plain')
-
-    PageValues.findById('615af2142c48c1438d27928b', (err, pageValues) => {
-        if (err) {
-            console.error(err)
-            res.status(500).send(err.message)
-        } else {
-            res.status(200).send(pageValues.message)
-        }
-    })
+    res.status(200).send('This website has been created by @Jphn, using NodeJs and MongoDB (^～^)')
 }
 
 // Controller: Dashboard
