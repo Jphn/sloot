@@ -24,7 +24,7 @@ createHandlebars.handlebars.registerHelper('autoNum', (num) => {
 // Mongoose Config
 main().catch(err => console.log(err))
 async function main() {
-    await mongoose.connect(`mongodb://${dotEnv.DB_HOST}:${dotEnv.DB_PORT}/${dotEnv.DB_NAME}`)
+    await mongoose.connect(`mongodb+srv://${dotEnv.DB_USER}:${dotEnv.DB_PASS}@cluster0.jg7jd.mongodb.net/${dotEnv.DB_NAME}?retryWrites=true&w=majority`)
 }
 // Static Path Config
 app.use(express.static(path.join(__dirname, 'public')))
