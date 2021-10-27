@@ -1,6 +1,6 @@
 // Modules
 const rootRouter = require('express').Router()
-const controller = require('../controllers/root/root')
+const controller = require('../controllers/root/rootController')
 
 // Route: Home
 rootRouter.get('/', controller.home)
