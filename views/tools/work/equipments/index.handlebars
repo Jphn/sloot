@@ -43,7 +43,10 @@
     <div class="modal-background"></div>
     <div class="modal-content">
         <div class="box">
-            <form action="">
+            <form action="/api/work/equipments/edit" method="post">
+                <div class="is-hidden">
+                    <input type="hidden" name="id" value="{{_id}}" required>
+                </div>
                 <div class="field is-horizontal">
                     <div class="field-label is-normal">
                         <label class="label">Information</label>
@@ -51,7 +54,8 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control is-expanded has-icons-left has-icons-right">
-                                <input class="input" type="text" placeholder="Type" value="{{type}}" required>
+                                <input class="input" name="type" type="text" placeholder="Type" value="{{type}}"
+                                    required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-tags"></i>
                                 </span>
@@ -62,7 +66,8 @@
                         </div>
                         <div class="field">
                             <p class="control is-expanded has-icons-left">
-                                <input class="input" type="text" placeholder="Subtype" value="{{subtype}}">
+                                <input class="input" name="subtype" type="text" placeholder="Subtype"
+                                    value="{{subtype}}">
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-tags"></i>
                                 </span>
@@ -78,7 +83,8 @@
                     <div class="field-body">
                         <div class="field">
                             <p class="control is-expanded has-icons-left">
-                                <input class="input" type="text" placeholder="Name" value="{{name}}" required>
+                                <input class="input" name="name" type="text" placeholder="Name" value="{{name}}"
+                                    required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-quote-left"></i>
                                 </span>
@@ -94,7 +100,8 @@
                     <div class="field-body">
                         <div class="field is-narrow">
                             <p class="control is-expanded has-icons-left">
-                                <input class="input" type="number" placeholder="Qty" value="{{quantity}}" required>
+                                <input class="input" name="qty" type="number" placeholder="Qty" value="{{quantity}}"
+                                    required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-hashtag"></i>
                                 </span>
@@ -110,8 +117,8 @@
                     <div class="field-body">
                         <div class="field">
                             <div class="control">
-                                <textarea class="textarea"
-                                    placeholder="Write here any comments about this equipment">{{comments}}</textarea>
+                                <textarea class="textarea" placeholder="Write here any comments about this equipment"
+                                    name="comments">{{comments}}</textarea>
                             </div>
                         </div>
                     </div>

@@ -13,5 +13,5 @@ exports.main = (req, res) => {
 exports.edit = (req, res) => {
     res.setHeader('Content-Type', 'application/json')
     res.status(200).json(req.body)
-    // Equipment.findByIdAndUpdate()
+    // Equipment.findByIdAndUpdate(req.body.id, )
 }

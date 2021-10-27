@@ -3,6 +3,7 @@ const express = require('express')
 const handlebars = require('express-handlebars')
 const mongoose = require('mongoose')
 const path = require('path')
+const bodyParser = require('body-parser')
 
 // DotEnv Config
 require('dotenv').config()
@@ -12,7 +13,6 @@ const dotEnv = process.env
 const app = express()
 const port = dotEnv.PORT || 8080
 const maintenance = (dotEnv.MAINTENANCE == 'true') ? true : false
-app.use(express.json())
 
 // Handlebars Config
 app.engine('handlebars', handlebars())
@@ -29,6 +29,10 @@ async function main() {
 }
 // Static Path Config
 app.use(express.static(path.join(__dirname, 'public')))
+
+// Body Parser Config
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.json())
 
 // Middlewares
 app.use((req, res, next) => {
@@ -51,6 +55,10 @@ app.use('/tools', toolsRoute)
 
 // Routes: Tools
 app.use('/api', apiRoute)
+
+app.post('/post', (req, res) => {
+    res.send(req.body)
+})
 
 // Server Start
 app.listen(port, () => {
