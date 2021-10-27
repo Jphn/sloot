@@ -12,6 +12,7 @@ const dotEnv = process.env
 const app = express()
 const port = dotEnv.PORT || 8080
 const maintenance = (dotEnv.MAINTENANCE == 'true') ? true : false
+app.use(express.json())
 
 // Handlebars Config
 app.engine('handlebars', handlebars())
@@ -40,12 +41,16 @@ app.use((req, res, next) => {
 // Routes Imports
 const rootRoute = require('./routes/root')
 const toolsRoute = require('./routes/tools')
+const apiRoute = require('./routes/api')
 
 // Routes: Main
 app.use('/', rootRoute)
 
 // Routes: Tools
 app.use('/tools', toolsRoute)
+
+// Routes: Tools
+app.use('/api', apiRoute)
 
 // Server Start
 app.listen(port, () => {

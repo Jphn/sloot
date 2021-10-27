@@ -1,8 +1,11 @@
 // Ajax test
+$.post('/api/work/equipments/edit', { content: 'no content' })
+
 $.ajax({
-    url: 'http://localhost:3000/about',
-    type: 'GET',
-    dataType: 'text',
+    url: '/api/work/equipments/edit',
+    method: 'GET',
+    contentType: 'application/json; charset=UTF-8',
+    dataType: 'json',
     success: (data) => {
         console.log(data)
     }

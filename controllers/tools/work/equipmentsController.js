@@ -22,21 +22,3 @@ exports.main = (req, res) => {
         }
     })
 }
-
-// Controller: Edit
-exports.edit = (req, res) => {
-    res.setHeader('Content-Type', 'text/html')
-    Equipment.findById(req.params.id, (err, data) => {
-        if (err) {
-            console.error(err)
-        } else {
-            console.log(data)
-            res.status(200).render('tools/work/equipments/form', {
-                pageValues: {
-                    pageTitle: 'Edit Equipment',
-                    title: 'Edit Equipment',
-                }
-            })
-        }
-    })
-}
