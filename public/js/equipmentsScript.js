@@ -50,5 +50,27 @@ $(document).ready(() => {
     }
 
     // Form AJAX submit
-    $('')
+    $('form').each((index, element) => {
+        $(element).submit((event) => {
+            event.preventDefault()
+            const formValues = {
+                id: element.id.value,
+                type: element.type.value,
+                subtype: element.subtype.value,
+                name: element.name.value,
+                qty: element.qty.value,
+                comments: element.comments.value
+            }
+            $.ajax({
+                url: '/api/work/equipments/edit',
+                method: 'POST',
+                contentType: 'application/json; charset=UTF-8',
+                dataType: 'json',
+                data: JSON.stringify(formValues),
+                success: (data) => {
+                    console.log(data)
+                }
+            })
+        })
+    })
 })
