@@ -51,6 +51,7 @@ $(document).ready(() => {
 
     // Form AJAX submit
     $('form').each((index, element) => {
+        // Form submit AJAX event
         $(element).submit((event) => {
             event.preventDefault()
             const formValues = {
@@ -62,7 +63,7 @@ $(document).ready(() => {
                 comments: element.comments.value
             }
             $.ajax({
-                url: '/api/work/equipments/edit',
+                url: '/api/work/equipments/update',
                 method: 'POST',
                 contentType: 'application/json; charset=UTF-8',
                 dataType: 'json',
@@ -74,6 +75,33 @@ $(document).ready(() => {
                 }
             })
         })
-        console.log(element)
+
+        // Delete checkbox
+        $(element.deleteCheck).change(() => {
+            switch (element.deleteCheck.checked) {
+                case true:
+                    $(element.deleteButton).prop('disabled', false)
+                    break;
+
+                case false:
+                    $(element.deleteButton).prop('disabled', true)
+                    break;
+            }
+        })
+        $(element.deleteButton).click((event) => {
+            event.preventDefault()
+            // $.ajax({
+            //     url: '/api/work/equipments/delete',
+            //     method: 'POST',
+            //     contentType: 'application/json; charset=UTF-8',
+            //     dataType: 'json',
+            //     data: JSON.stringify({ id: element.id.value }),
+            //     success: (data) => {
+            //         setTimeout(() => {
+            //             location.reload()
+            //         }, 2500)
+            //     }
+            // })
+        })
     })
 })
