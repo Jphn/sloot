@@ -12,6 +12,12 @@ exports.main = (req, res) => {
 // Controller: Edit
 exports.edit = (req, res) => {
     res.setHeader('Content-Type', 'application/json')
-    res.status(200).json(req.body)
-    // Equipment.findByIdAndUpdate(req.body.id)
+    Equipment.findByIdAndUpdate(req.body.id, req.body, { new: true }, (err, data) => {
+        if (err) {
+            console.log(err)
+            res.status(400).json(err)
+        } else {
+            res.status(200).json(data)
+        }
+    })
 }

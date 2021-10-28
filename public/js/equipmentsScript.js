@@ -68,9 +68,12 @@ $(document).ready(() => {
                 dataType: 'json',
                 data: JSON.stringify(formValues),
                 success: (data) => {
-                    console.log(data)
+                    setTimeout(() => {
+                        location.reload()
+                    }, 2500)
                 }
             })
         })
+        console.log(element)
     })
 })

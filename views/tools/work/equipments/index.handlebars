@@ -124,17 +124,22 @@
                     </div>
                 </div>
 
-                <div class="field is-horizontal">
+                <div class="field is-grouped">
                     <div class="field-label">
                         <!-- Left empty for spacing -->
                     </div>
                     <div class="field-body">
-                        <div class="field">
-                            <div class="control">
-                                <button typer="submit" class="button is-primary">
-                                    Update Information
-                                </button>
-                            </div>
+                        <div class="control">
+                            <button class="button is-primary mr-1">Update</button>
+                        </div>
+                        <div class="control">
+                            <button class="button is-danger mr-1" disabled>Delete</button>
+                        </div>
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox" name="deleteConfirmation">
+                                Mark to delete this item
+                            </label>
                         </div>
                     </div>
                 </div>
