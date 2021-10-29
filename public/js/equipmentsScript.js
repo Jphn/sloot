@@ -54,6 +54,9 @@ $(document).ready(() => {
         // Form submit AJAX event
         $(element).submit((event) => {
             event.preventDefault()
+
+            $(element.submitButton).addClass('is-loading')
+
             const formValues = {
                 id: element.id.value,
                 type: element.type.value,
@@ -62,6 +65,7 @@ $(document).ready(() => {
                 qty: element.qty.value,
                 comments: element.comments.value
             }
+
             $.ajax({
                 url: '/api/work/equipments/update',
                 method: 'POST',
@@ -71,7 +75,7 @@ $(document).ready(() => {
                 success: (data) => {
                     setTimeout(() => {
                         location.reload()
-                    }, 2500)
+                    }, 1500)
                 }
             })
         })
@@ -90,6 +94,7 @@ $(document).ready(() => {
         })
         $(element.deleteButton).click((event) => {
             event.preventDefault()
+
             // $.ajax({
             //     url: '/api/work/equipments/delete',
             //     method: 'POST',

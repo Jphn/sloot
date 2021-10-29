@@ -12,7 +12,7 @@ exports.read = (req, res) => {
 // Controller: Create
 exports.create = (req, res) => {
     res.setHeader('Content-Type', 'application/json')
-    res.json()
+    res.status(200).json(req.body)
 
     // const newEquipment = {
     //     type: req.body.type,
